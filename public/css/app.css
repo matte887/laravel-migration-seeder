@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container table td,
+.container table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.container table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container table th {
+  text-align: center;
+}
+
