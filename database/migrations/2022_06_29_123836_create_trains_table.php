@@ -18,12 +18,14 @@ class CreateTrainsTable extends Migration
             $table->string('azienda', 20);
             $table->string('stazione_partenza', 50);
             $table->string('stazione_arrivo', 50);
+            $table->date('data_partenza');
             $table->time('orario_partenza', 0);
+            $table->date('data_arrivo');
             $table->time('orario_arrivo', 0);
             $table->unsignedMediumInteger('codice_treno');
             $table->unsignedTinyInteger('numero_carrozze');
-            $table->boolean('in_orario')->default(1);
-            $table->boolean('cancellato')->default(0);
+            $table->boolean('in_orario')->default(true);
+            $table->boolean('cancellato')->default(false);
             $table->timestamps();
         });
     }
